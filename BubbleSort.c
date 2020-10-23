@@ -16,16 +16,16 @@ void main()
 }
 void sort(int *arr, int n)
 {
-    int i,j;
+    int t=0,i,j;
     for(i=0;i<n-1;i++)
     {
         for(j=0;j<n-i-1;j++)
         {
             if(arr[j]>=arr[j+1])
             {
-                arr[j]=arr[j]+arr[j+1];
-                arr[j+1]=arr[j]-arr[j+1];
-                arr[j]=arr[j]-arr[j+1]
+                t=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=t;
             }
         }
         printf("Elements after pass %d:-", i+1);
