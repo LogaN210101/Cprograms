@@ -7,7 +7,7 @@ void main()
     int t = n;
     while (n > 0)
     {
-        s = s*10 + n % 10;
+        s = (s*10) + (n % 10);
         n = n / 10;
     }
     printf("Reverse of %d is %d.", t, s);
