@@ -7,7 +7,7 @@ void main()
     int t = n;
     while (n > 0)
     {
-        s = s + n % 10;
+        s = s + (n % 10);
         n = n / 10;
     }
     printf("Sum of the digits of %d is %d.", t, s);
